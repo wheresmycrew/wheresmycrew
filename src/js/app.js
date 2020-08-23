@@ -4,7 +4,7 @@ import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
 import 'leaflet/dist/leaflet.css'
 
-import App from '../Components/App'
+import App from '../components/App'
 
 Vue.use(Vuetify)
 

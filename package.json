@@ -1,13 +1,17 @@
 {
-  "devDependencies": {
-    "@mdi/font": "^5.5.55",
-    "@vue/component-compiler-utils": "^3.2.0",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.12"
-  },
-  "dependencies": {
-    "leaflet": "^1.6.0",
-    "vue": "^2.6.12",
-    "vuetify": "^2.3.9"
-  }
+    "scripts": {
+        "serve": "parcel src/index.html",
+        "build": "rm -rf dist .cache && parcel build src/index.html"
+    },
+    "devDependencies": {
+        "@mdi/font": "^5.5.55",
+        "@vue/component-compiler-utils": "^3.2.0",
+        "vue-hot-reload-api": "^2.3.4",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "leaflet": "^1.6.0",
+        "vue": "^2.6.12",
+        "vuetify": "^2.3.9"
+    }
 }
