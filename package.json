@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "serve": "parcel src/index.html",
+        "develop": "parcel src/index.html",
         "build": "rm -rf dist .cache && parcel build src/index.html"
     },
     "devDependencies": {
@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "leaflet": "^1.6.0",
+        "src": "^1.1.2",
         "vue": "^2.6.12",
         "vuetify": "^2.3.9"
     }

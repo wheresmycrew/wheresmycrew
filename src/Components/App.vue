@@ -35,8 +35,7 @@
         </v-app-bar>
 
         <v-main>
-            <h1>Test</h1>
-            <Leaflet />
+            <Leaflet :coords="this.coords"/>
         </v-main>
     </v-app>
 </template>
@@ -53,6 +52,7 @@ export default {
     },
     data: () => ({
         drawer: null,
+        coords: [[51.5, -0.09],[51.5, -0.092],[51.505, -0.092]]
     }),
 }
 </script>
