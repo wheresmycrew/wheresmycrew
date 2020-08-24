@@ -1,11 +1,16 @@
 {
     "scripts": {
         "develop": "parcel src/index.html",
-        "build": "rm -rf dist .cache && parcel build src/index.html"
+        "build": "rm -rf dist .cache && parcel build src/index.html",
+
+        "develop-npx": "npx parcel src/index.html",
+        "build-npx": "rm -rf dist .cache && npx parcel build src/index.html"
     },
     "devDependencies": {
         "@mdi/font": "^5.5.55",
         "@vue/component-compiler-utils": "^3.2.0",
+        "ngrok": "^3.2.7",
+        "parcel-bundler": "^1.12.4",
         "vue-hot-reload-api": "^2.3.4",
         "vue-template-compiler": "^2.6.12"
     },
