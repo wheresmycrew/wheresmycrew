@@ -4,6 +4,8 @@
 
 <script>
 import Leaflet from 'leaflet'
+import markerIconUrl from 'leaflet/dist/images/marker-icon.png'
+import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png'
 
 export default {
     props: {
@@ -34,8 +36,13 @@ export default {
             layer.addTo(this.map)
         },
         createMarkers() {
+            let markerIcon = Leaflet.icon({
+                iconUrl: markerIconUrl,
+                shadowUrl: markerShadowUrl
+            })
+
             this.coords.forEach(element => {
-                const marker = Leaflet.marker(element)
+                const marker = Leaflet.marker(element, {icon: markerIcon})
                 marker.addTo(this.map)
                 this.markers.push(marker)
             })
